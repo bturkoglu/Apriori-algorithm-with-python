@@ -1,0 +1,5 @@
+Seker,Cay,Ekmek
+Ekmek,Peynir,Zeytin,Makarna
+Seker,Peynir,Deterjan,Ekmek,Makarna
+Ekmek,Peynir,Cay,Makarna
+Peynir,Makarna,Seker,Icecek

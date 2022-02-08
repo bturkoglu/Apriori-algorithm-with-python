@@ -1,0 +1,46 @@
+1	şeker,çay,ekmek
+2	ekmek,peynir,zeytin,makarna
+3	şeker,peynir,deterjan,ekmek,makarna
+4	ekmek,peynir,çay,makarna
+5	peynir,makarna,şeker,içeçek
+
+
+asgari destek(frekans): 3
+güven  :%60
+
+******************************
+şeker 3
+çay 2
+ekmek 4
+peynir 4
+zeytin 1
+makarna 4
+deterjan 1
+içecek 1
+***************************	
+şeker 3
+ekmek 4
+makarna 4
+peynir 4
+*******************************
+şeker ekmek 2
+şeker makarna 2
+şeker peynir 2
+ekmek makarna 3
+ekmek peynir 3
+makarna peynir 4
+**********************************
+ekmek makarna 3
+ekmek peynir 3
+makarna peynir 4
+****************************
+ekmek makarna peynir 3
+***************************
+ekmek,makarna---------------peynir          (ekmek makarna peynir)/(ekmek makarna)=  3/3=%100
+peynir,ekmek----------------makarna         (ekmek makarna peynir)/(peynir ekmek) =  3/3=%100
+peynir,makarna--------------ekmek           (ekmek makarna peynir)/(peynir makarna)= 3/4=%75
+peynir----------------------ekmek,makarna   (ekmek peynir makarna)/(peynir)=         3/4=%75
+ekmek-----------------------peynir,makarna  (ekmek peynir makarna)/(ekmek)=          3/4=%75
+makarna---------------------ekmek,peynir    (ekmek peynir makarna)/(makarna)=        3/4=%75
+
+güven % 60dı barajın altında kalan olmadıgı için hepsini aldık
